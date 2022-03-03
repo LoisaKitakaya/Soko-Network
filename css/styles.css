@@ -1,0 +1,100 @@
+body,
+html {
+  height: 1000vh !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: whitesmoke !important;
+  color: white !important;
+}
+
+.menu-btn {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  color: darkturquoise !important;
+}
+
+.sub-menu {
+  position: absolute !important;
+  top: 3.75rem !important;
+}
+
+#services-sub-menu {
+  right: 7rem !important;
+  width: 60% !important;
+}
+
+#about-sub-menu {
+  right: 14rem !important;
+  width: 30% !important;
+}
+
+#contacts-sub-menu {
+  right: 12rem !important;
+  width: 20% !important;
+}
+
+.intro-container {
+  background-image: url("../img/Shadow-Fall-Background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.setup {
+  width: fit-content;
+  height: fit-content;
+  padding: 8rem;
+}
+
+.setup h1 {
+  font-weight: bold;
+  font-size: 64px;
+}
+
+.setup p {
+  font-weight: 150;
+  font-size: 24px;
+}
+
+.row {
+  flex-wrap: nowrap !important;
+}
+
+.col-sm-4 {
+  margin: 0 0.25rem !important;
+  padding: 0.5rem !important;
+}
+
+.col-sm-4 ul {
+  list-style: square;
+}
+
+.sub-menu-link {
+  color: rgb(45, 45, 45);
+  text-decoration: none;
+}
+
+.sub-menu-link:hover {
+  color: rgb(45, 45, 45);
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 240px) and (max-width: 600px) {
+  .menu-btn {
+    display: flex;
+  }
+
+  .links {
+    display: none;
+  }
+}
