@@ -1,11 +1,12 @@
 body,
 html {
-  height: 1000vh !important;
+  height: 300vh !important;
   width: 100% !important;
   padding: 0 !important;
   margin: 0 !important;
   background-color: whitesmoke !important;
   color: white !important;
+  scroll-behavior: smooth !important;
 }
 
 .menu-btn {
@@ -18,8 +19,20 @@ html {
   color: white !important;
 }
 
+.navbar {
+  position: fixed !important;
+  top: 0 !important;
+  width: 100% !important;
+  z-index: 100;
+}
+
+.bg {
+  background-color: transparent !important;
+}
+
 .nav-link:hover {
   color: darkturquoise !important;
+  cursor: pointer !important;
 }
 
 .sub-menu {
@@ -28,13 +41,13 @@ html {
 }
 
 #services-sub-menu {
-  right: 7rem !important;
-  width: 60% !important;
+  right: 2rem !important;
+  width: 70% !important;
 }
 
 #about-sub-menu {
-  right: 14rem !important;
-  width: 30% !important;
+  right: 17.5rem !important;
+  width: 20% !important;
 }
 
 #contacts-sub-menu {
@@ -46,7 +59,7 @@ html {
   background-image: url("../img/Shadow-Fall-Background.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   height: 100vh;
 }
 
@@ -89,7 +102,74 @@ html {
   text-decoration: underline;
 }
 
-@media screen and (min-width: 240px) and (max-width: 600px) {
+#back-top {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.pitch-container {
+  background-image: url("../img/rm314-adj-09.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.pitch {
+  padding-top: 4rem;
+}
+
+.pitch-card {
+  background-color: #1577b88c !important;
+  padding: 2rem !important;
+  width: 80% !important;
+  height: 80% !important;
+  margin: auto !important;
+  text-align: justify !important;
+}
+
+.col-sm-auto {
+  margin: 1rem !important;
+  padding: 1rem !important;
+  background-color: rgba(0, 0, 0, 0.432) !important;
+  width: 18rem !important;
+  border-radius: 0.5rem;
+}
+
+.col-sm-auto:hover {
+  background-color: rgba(0, 0, 0, 0.514) !important;
+}
+
+.col-sm-auto a {
+  text-decoration: none;
+}
+
+.pitch-row {
+  width: fit-content !important;
+  margin: auto !important;
+}
+
+.media-intro h2 {
+  padding: 3rem 0;
+}
+
+.media-intro-container {
+  background-image: url("../img/61769.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.media-card {
+  text-align: justify !important;
+  background-color: #1577b88c !important;
+}
+.media-card-container {
+  padding-bottom: 8rem !important;
+}
+
+@media screen and (min-width: 240px) and (max-width: 780px) {
   .menu-btn {
     display: flex;
   }

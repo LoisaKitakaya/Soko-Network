@@ -12,7 +12,6 @@ $(document).ready(function () {
 
   servicesToggle.click(function () {
     aboutSubMenu.fadeOut();
-    contactsSubMenu.fadeOut();
     servicesSubMenu.slideToggle();
   });
 
@@ -24,25 +23,26 @@ $(document).ready(function () {
 
   aboutToggle.click(function () {
     servicesSubMenu.fadeOut();
-    contactsSubMenu.fadeOut();
     aboutSubMenu.slideToggle();
-  });
-
-  // about sub container
-  var contactsSubMenu = $("#contacts-sub-menu");
-  var contactsToggle = $("#contacts");
-
-  contactsSubMenu.hide();
-
-  contactsToggle.click(function () {
-    aboutSubMenu.fadeOut();
-    servicesSubMenu.fadeOut();
-    contactsSubMenu.slideToggle();
   });
 
   $(".main-body").click(function () {
     servicesSubMenu.hide();
     aboutSubMenu.hide();
-    contactsSubMenu.hide();
+  });
+
+  // navbar background
+  var navbar = $("#top");
+  
+  $(window).scroll(function () {
+    var scroll = $(document).scrollTop();
+
+    if (scroll > 80) {
+      navbar.removeClass("bg");
+      navbar.addClass("bg-dark");
+    } else {
+      navbar.addClass("bg");
+      navbar.removeClass("bg-dark");
+    }
   });
 });
