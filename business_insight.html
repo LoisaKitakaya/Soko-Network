@@ -146,7 +146,16 @@
                 <hr />
               </div>
             </div>
-            <a href="#" class="nav-link">Contacts</a>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn-modal nav-link"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              Contacts
+            </button>
+            <!-- Button trigger modal -->
             <a href="#" class="btn btn-outline-info">Check Coverage</a>
           </div>
           <div class="menu-btn nav-item">
@@ -394,6 +403,113 @@
       <hr />
     </div>
     <!-- footer -->
+
+    <!--  -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Contacts panel</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-center">
+              <i
+                class="bi bi-envelope text-info"
+                style="font-size: 0.825rem"
+              ></i>
+              : soko@info.com
+            </p>
+            <hr />
+            <p class="text-center">
+              <i
+                class="bi bi-telephone text-info"
+                style="font-size: 0.825rem"
+              ></i>
+              : +25458609850
+            </p>
+            <hr />
+            <p class="text-center">
+              <i
+                class="bi bi-headset text-info"
+                style="font-size: 0.825rem"
+              ></i>
+              : +25458609850
+            </p>
+            <hr />
+            <h3 class="text-center">Send us a message</h3>
+            <!-- <hr /> -->
+            <form action="#">
+              <div class="mb-3">
+                <label for="first-name" class="form-label">First Name</label>
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  class="form-control"
+                  placeholder="first name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="second-name" class="form-label">Second Name</label>
+                <input
+                  type="text"
+                  name="second-name"
+                  id="second-name"
+                  class="form-control"
+                  placeholder="second name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="comments" class="form-lable">Comments</label>
+                <textarea
+                  name="comments"
+                  id="comments"
+                  cols="30"
+                  rows="10"
+                  class="form-control"
+                  placeholder="comments, compliments, complaints"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-success container-fluid">
+                Submit
+              </button>
+            </form>
+            <hr />
+          </div>
+          <div class="modal-footer">
+            <a href="location.html" class="btn btn-outline-info container-fluid"
+              >Find us here</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
   </body>
   <script src="./js/main.js"></script>
 </html>
